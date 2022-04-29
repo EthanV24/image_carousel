@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  img {
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  .carousel {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    height: 500px;
+    width: 700px;
+    overflow: hidden;
+  }
+  
+  .imageContainer {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .buttonsContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn {
+    background-color: darkturquoise;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    width: 50%;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  
+  .btn:focus {
+    outline: none;
+  }
